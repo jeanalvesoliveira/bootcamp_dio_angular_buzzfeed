@@ -1,0 +1,29 @@
+<div class="quizz">
+    <div class="quizz__logo">
+        <img src="assets/imgs/logo.png" alt="">
+        <h3>{{title}}</h3>
+    </div>
+    <div class="quizz__questions">
+        <h3>{{questionSelected.question}}</h3>
+    </div>
+    <div class="quizz__options">
+        <button type="button" class="btn-option">
+            optionname
+        </button>
+        <button type="button" class="btn-option">
+            optionname
+        </button>
+        <button type="button" class="btn-option">
+            optionname
+        </button>
+        <button type="button" class="btn-option">
+            optionname
+        </button>
+    </div>
+    @if (finished) {
+        <div class="quizz__results">
+            <h1>O seu resultado é:</h1>
+            <p>Resposta Selecionada</p>
+        </div>
+    }
+</div>
